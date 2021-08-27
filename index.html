@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>My School</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        :root{
+          --primarycolor: #c0333d; 
+          --lighttxtcolor: #666666;
+        }
+      
+        .margined_high{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .margined_low{
+          width: 70%;
+          margin: 0 auto;
+        }
+        .nav-link{
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+        .carousel-item{
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+        .carousel-item img{
+            height: 100%;
+        }
+        .info_headings{
+          width: 70%;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .info_heading1{
+          font-size: 35px;
+          font-weight: 600;
+        }
+        .info_heading2{
+          font-size: 35px;
+          font-weight: 700;
+          color: var(--primarycolor);
+        }
+        .info_paragraph{
+          width: 75%;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 15px;
+          color: var(--lighttxtcolor);
+        }
+        .btn-color
+        {
+          background-color: var(--primarycolor);
+          color: white;
+        }
+        .upcoming_bgcolor{
+          background-color: #EBEBEB;
+        }
+        .txt1{
+          font-size: 35px;
+          font-weight: 700;
+          color:black;
+        }
+        .txt2{
+          font-size: 35px;
+          font-weight: 700;
+          color: var(--primarycolor);
+        }
+        .upcoming_innerpart{
+          height: 30vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+        }
+        /* @media only screen and (min-width: 900px){
+          .info_headings{
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          
+        }
+        .carousel-item{
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+        .carousel-item img{
+            height: 100%;
+        }
+        .margined_high{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .margined_low{
+          width: 70%;
+          margin: 0 auto;
+        }
+        
+        }
+        @media only screen and (min-width: 700px) and (max-width: 900px){
+          .info_headings{
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          
+        }
+        .carousel-item{
+            height: 80vh;
+            object-fit: cover;
+            object-position: center;
+        }
+        .carousel-item img{
+            height: 100%;
+        }
+        .margined_high{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .margined_low{
+          width: 70%;
+          margin: 0 auto;
+        }
+        
+        }
+        @media only screen and (min-width: 200px){
+          .info_headings{
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+          }
+          .carousel-item{
+            height: 60vh;
+            object-fit: cover;
+            object-position: center;
+        }
+        .carousel-item img{
+            height: 100%;
+        }
+        .margined_high{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .margined_low{
+          width: 100%;
+          margin: 0 auto;
+        } */
+          /* .info_heading1{
+          font-size: 25px;
+          font-weight: 600;
+        }
+        .info_heading2{
+          font-size: 25px;
+          font-weight: 700;
+          color: #c0333d;
+        }  */
+      /* } */
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="margined_high">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">MERO SCHOOL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">STUDENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PARENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ORGANIZATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PAYMENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">LAUNCH INFO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">RESOURCES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NEWS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CURRENT RFP</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- slide -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/1600x900/?school" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1600x900/?students" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1600x900/?books" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- student/parent info -->
+      <div class="info margined_low mt-5">
+          <div class="info_headings gy-3">
+            <p class="info_heading1">WELCOME TO <br><span class="info_heading2">GEORGE WASHINGTON ACADEMY</span></p>
+          </div>
+          <p class="info_paragraph gy-3 my-3">
+            We are a community of learners. We will do whatever it takes to learn. We are building a strong foundation by believing we can, working our plan, then FEELING the POWER of SUCCESS!
+          </p>
+          <div class="row">
+            <div class="col-md-6 gy-5">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="https://source.unsplash.com/400x400/?students" alt="..." class="rounded-circle mb-4 img-fluid" style="object-fit: cover;"  width="200px" height="200px">
+                  <h5 class="card-title">STUDENT INFO</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-color">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 gy-5">
+              <div class="card">
+                <div class="card-body text-center">
+                  <img src="https://source.unsplash.com/400x400/?parents" alt="..." class="rounded-circle mb-4 img-fluid" style="object-fit: cover;" width="200px" height="200px">
+                  <h5 class="card-title">PARENT INFO</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-color">Go somewhere</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       <!-- Upcoming evnts -->
+       <div class="upcoming_bgcolor mt-5">
+         <div class="margined_low upcoming_innerpart">
+           <div>
+            <div class="txt1">UPCOMING <span class="txt2">EVENTS</span></div>
+            <div class="text-center py-3">
+              <a href="" class="btn btn-color">SEE ALL EVENTS</a>
+            </div>
+           </div>
+         </div>
+       </div>
+       <!-- Online Payments -->
+    <div class="margined_low mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <img src="https://source.unsplash.com/400x400/?parents" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <img src="https://source.unsplash.com/400x400/?parents" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</html>
